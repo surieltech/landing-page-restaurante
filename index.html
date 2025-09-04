@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+
+    <title>Landing Page Teste</title>
+</head>
+
+<body>
+    <header>
+        <!--barra de navegação-->
+        <nav id="navbar">
+            <i class="fa-solid fa-mug-hot" id="nav_logo"> cozinha da nil</i>
+
+            <!--itens da barra de navegação-->
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#events">Eventos</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#opinions">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Entre em contato aqui!
+            </button>
+
+            <!--barrinhas que só vão aparecer no mobile-->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <!--menu das barrinhas propriamente dito-->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#events">Eventos</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#opinions">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Entre em contato aqui!
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+
+            <!--uma classe para poder criar uma forma no css-->
+            <div class="shape"></div>
+
+            <div id="cta">
+                <h1 class="title"> A <span>cozinha</span> da galera</h1>
+                <p class="descripition"> A cozinha que faz você se sentir bem consigo mesmo</p>
+
+                <!--botões com links-->
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+
+                    <a href="tel:+559298247-2529" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (92) 98247-2529
+                    </a>
+                </div>
+
+                <!--botões para as redes sociais-->
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--imagem da parte de início-->
+            <div id="banner">
+                <img src="src/images/image.png" alt="">
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <h2 class="section-title">Cardápio</h2>
+                <h3 class="section-subtitle">Confira os nossos pratos especiais</h3>
+
+                <div id="dishes">
+                    <!--dish 01-->
+                    <div class="dish">
+
+                        <img src="src/images/dish.png" class="dish-heart" alt="">
+
+                        <h3 class="dish-title"> Camarão Empanado</h3>
+                        <span class="dish-description">Camarão empanado frito com legumes em uma bowl</span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> (500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$ 20,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--dish 02-->
+                    <div class="dish">
+
+                        <img src="src/images/dish2.png" class="dish-heart" alt="">
+
+                        <h3 class="dish-title"> Misto Quente</h3>
+                        <span class="dish-description">Misto quente simples com pão, queijo e presunto feito na chapa</span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> (700+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$ 10,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--dish 03-->
+                    <div class="dish">
+
+                        <img src="src/images/dish3.png" class="dish-heart" alt="">
+
+                        <h3 class="dish-title"> Salada de Frutas</h3>
+                        <span class="dish-description">Salada de frutas premium com kiwi, abacate, banana, morango e aveia</span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> (500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$ 25,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--dish 04-->
+                    <div class="dish">
+
+                        <img src="src/images/dish4.png" class="dish-heart" alt="">
+
+                        <h3 class="dish-title"> Macarrão Oriental</h3>
+                        <span class="dish-description">Macarrão com molho oriental, frango e legumes</span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> (500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$ 30,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+        </section>
+
+        <section id="eventos">
+        </section>
+
+        <section id="avaliacoes">
+            <!--imagem da chef de cozinha-->
+            <img src="src/images/chef.png" id="avaliacoes_chef" alt="">
+
+            <!--avaliações propriamente ditas-->
+            <div id="avaliacoes_content">
+                <h2 class="section-title">Avaliações</h2>
+                <h3 class="section-subtitle">O que os nossos clientes falam sobre nós?</h3>
+
+                <div id="feedbacks">
+                    <!--primeiro feedback-->
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                       <div class="feedback-content">
+                        <p>
+                            Sandra Calheiros
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <br>
+                        <p>
+                          Show de bola! O melhor restaurante que eu já fui. Atendimento excelente, comida feita com ingredientes frescos e ambiente absurdo de bom. Me senti muito bem-vinda.  
+                        </p>
+                       </div> 
+                    </div>
+
+                    <!--segundo feedback-->
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                       <div class="feedback-content">
+                        <p>
+                            Isabela Barros
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <br>
+                        <p>
+                          Não tenho nada do que reclamar, só tenho a agradecer à equipe maravilhosa que dá tudo de si para fazer com que nos sintamos bem acolhidos e bem servidos. Sem dúvidas é um dos melhores lugares que eu já fui. Quero voltar mais vezes!!  
+                        </p>
+                       </div> 
+                    </div>
+
+                </div>
+
+                <button class="btn-default">Ver mais avaliações</button>
+
+            </div>
+        </section>
+
+    </main id="content">
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 SurielTech
+            </span>
+
+            <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="src/javascript/script.js"></script>
+    
+</body>
+</html>

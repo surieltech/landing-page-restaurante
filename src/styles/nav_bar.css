@@ -1,0 +1,88 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    /* fixando o header no topo*/
+    position: sticky;
+    top: 0;
+    background-color: #fff9ea;
+    z-index: 3;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: black; 
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    /*tira a linha de baixo do link*/
+    text-decoration: none;
+    color:#1d1d1dad;
+    font-weight: 600;
+}
+
+/*para quando algum dos itens da barra de navegação for tocado/estiver ativo*/
+.nav-item.active a {
+    color: #1d1d1dad;
+    border-bottom: 3px solid #ffe100;
+}
+
+/*para esconder as barrinhas que só vão aparecer no mobile*/
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/*ajustando o tamanho da tela para mobile*/
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    
+        /*ajustando o estilo das barrinhas*/
+        #mobile_btn {
+            display: block;
+            border: none;
+            background-color: transparent;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* quando o menu mobile for tocado*/
+        #mobile_menu.active{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /*para a estilização da lista de itens das barrinhas*/
+         #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+        }
+
+            /*para a estilização dos itens da lista*/
+            #mobile_nav_list .nav-item {
+                list-style: none;
+                text-align: center;
+            } 
+
+    }

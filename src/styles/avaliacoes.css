@@ -1,0 +1,96 @@
+#avaliacoes {
+    /*pra botar a chef do lado das avaliações*/
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#avaliaco_chef {
+    /*ajustando a altura e largura da imagem (opcional)*/
+    width: 500px;
+    height: auto;
+}
+
+#avaliacoes .section-subtitle {
+    /* aumenta o subtítulo*/
+    font-size: 3rem;
+}
+
+#avaliacoes_content {
+    width: 50%;
+}
+
+#feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.feedback {
+    /* criando e estilizando as caixinhas dos feedbacks/avaliações */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-avatar {
+    /* customizando a foto do avatar */
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedback-content p {
+    /* o nome da pessoa de um lado e as estrelas do outro */
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-content p span {
+    color: #e9a209;
+}
+
+@media screen and (max-width: 1170px) {
+    #avaliacoes {
+        flex-direction: column;
+    }
+
+    #avaliacoes .section-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+ 
+    /* se quiser tirar a imagem da chef: #avaliacoes_chef {
+        display: none;
+    } */
+
+    #avaliacoes_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #avaliacoes .section-subtitle {
+        font-size: 2rem;
+    }
+
+    #avaliacoes_content {
+        width: 100%;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+} 
