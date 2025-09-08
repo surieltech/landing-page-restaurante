@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="src/styles/style.css">
 
     <title>Landing Page Teste</title>
+    <meta name="description" content="Restaurante Cozinha da Roberta em Manaus. Pratos especiais, eventos e avaliações de clientes.">
 </head>
 
 <body>
     <header>
         <!--barra de navegação-->
         <nav id="navbar">
-            <i class="fa-solid fa-mug-hot" id="nav_logo"> cozinha da nil</i>
+            <i class="fa-solid fa-mug-hot" id="nav_logo"> Cozinha da Roberta</i>
 
             <!--itens da barra de navegação-->
             <ul id="nav_list">
@@ -29,6 +30,9 @@
                 </li>
                  <li class="nav-item">
                     <a href="#opinions">Avaliações</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#address">Endereço</a>
                 </li>
             </ul>
 
@@ -46,7 +50,7 @@
         <!--menu das barrinhas propriamente dito-->
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
                  <li class="nav-item">
@@ -58,6 +62,9 @@
                  <li class="nav-item">
                     <a href="#opinions">Avaliações</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#address">Endereço</a>
+                </li>
             </ul>
 
             <button class="btn-default">
@@ -66,7 +73,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="content">
         <section id="home">
 
             <!--uma classe para poder criar uma forma no css-->
@@ -120,7 +127,7 @@
                     <!--dish 01-->
                     <div class="dish">
 
-                        <img src="src/images/dish.png" class="dish-heart" alt="">
+                        <img src="src/images/dish.png" class="dish-heart" alt="Camarão empanado com legumes em uma bowl" loading="lazy">
 
                         <h3 class="dish-title"> Camarão Empanado</h3>
                         <span class="dish-description">Camarão empanado frito com legumes em uma bowl</span>
@@ -222,40 +229,120 @@
         </section>
 
         <section id="eventos">
-        </section>
+            <div class="container">
+            <h2 class="section-title">Nossos Eventos</h2>
+            <p class="section-subtitle">Confira a agenda dos eventos gastronômicos incríveis que a Cozinha da Roberta irá participar e faça parte da nossa próxima experiência!</p>
+            
+            <div class="events-carousel">
+                <div class="events-track">
 
+                    <!-- Evento 1 -->
+                    <div class="event-card">
+                        <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1bGluYXJ5JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Festival de Sabores" class="event-image">
+                        <div class="event-content">
+                            <h3 class="event-title">Festival de Sabores</h3>
+                            <span class="event-date"><i class="far fa-calendar-alt"></i> 15 de Junho, 2025</span>
+                            <p class="event-description">Participação especial no maior festival gastronômico da região, com pratos exclusivos da Cozinha da Roberta.</p>
+                            <a href="#" class="read-more">Ver Fotos</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento 2 -->
+                    <div class="event-card">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGN1bGluYXJ5JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Noite Italiana" class="event-image">
+                        <div class="event-content">
+                            <h3 class="event-title">Noite Italiana</h3>
+                            <span class="event-date"><i class="far fa-calendar-alt"></i> 28 de Julho, 2025</span>
+                            <p class="event-description">Uma noite especial com massas frescas, risotos incríveis e o autêntico sabor da Itália na Cozinha da Roberta.</p>
+                            <a href="#" class="read-more">Ver Fotos</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento 3 -->
+                    <div class="event-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGV2ZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Jantar com Chef" class="event-image">
+                        <div class="event-content">
+                            <h3 class="event-title">Jantar com Chef</h3>
+                            <span class="event-date"><i class="far fa-calendar-alt"></i> 10 de Agosto, 2025</span>
+                            <p class="event-description">Experiência exclusiva com menu degustação preparado pela Chef Roberta, com harmonização de vinhos.</p>
+                            <a href="#" class="read-more">Ver Fotos</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento 4 -->
+                    <div class="event-card">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGN1bGluYXJ5JTIwZXZlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Workshop Culinário" class="event-image">
+                        <div class="event-content">
+                            <h3 class="event-title">Workshop Culinário</h3>
+                            <span class="event-date"><i class="far fa-calendar-alt"></i> 22 de Setembro, 2025</span>
+                            <p class="event-description">Aprenda as técnicas especiais da Cozinha da Roberta neste workshop exclusivo para amantes da gastronomia.</p>
+                            <a href="#" class="read-more">Ver Fotos</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento 5 -->
+                    <div class="event-card">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3RhdXJhbnQlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Festival de Verão" class="event-image">
+                        <div class="event-content">
+                            <h3 class="event-title">Festival de Verão</h3>
+                            <span class="event-date"><i class="far fa-calendar-alt"></i> 5 de Novembro, 2025</span>
+                            <p class="event-description">Pratos refrescantes e drinks especiais para celebrar a chegada do verão com muita gastronomia de qualidade.</p>
+                            <a href="#" class="read-more">Ver Fotos</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <div class="indicator active" data-index="0"></div>
+                    <div class="indicator" data-index="1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </section>
+        
         <section id="avaliacoes">
             <!--imagem da chef de cozinha-->
             <img src="src/images/chef.png" id="avaliacoes_chef" alt="">
-
+            
             <!--avaliações propriamente ditas-->
             <div id="avaliacoes_content">
                 <h2 class="section-title">Avaliações</h2>
                 <h3 class="section-subtitle">O que os nossos clientes falam sobre nós?</h3>
-
+                
                 <div id="feedbacks">
                     <!--primeiro feedback-->
                     <div class="feedback">
                         <img src="src/images/avatar.png" class="feedback-avatar" alt="">
-
-                       <div class="feedback-content">
-                        <p>
-                            Sandra Calheiros
-                            <span>
-                                <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            </span>
-                        </p>
-                        <br>
-                        <p>
-                          Show de bola! O melhor restaurante que eu já fui. Atendimento excelente, comida feita com ingredientes frescos e ambiente absurdo de bom. Me senti muito bem-vinda.  
-                        </p>
-                       </div> 
+                        
+                        <div class="feedback-content">
+                            <p>
+                                Sandra Calheiros
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <br>
+                            <p>
+                                Show de bola! O melhor restaurante que eu já fui. Atendimento excelente, comida feita com ingredientes frescos e ambiente absurdo de bom. Me senti muito bem-vinda.  
+                            </p>
+                        </div> 
                     </div>
-
+                    
                     <!--segundo feedback-->
                     <div class="feedback">
                         <img src="src/images/avatar.png" class="feedback-avatar" alt="">
@@ -269,11 +356,11 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            </span>
-                        </p>
-                        <br>
-                        <p>
-                          Não tenho nada do que reclamar, só tenho a agradecer à equipe maravilhosa que dá tudo de si para fazer com que nos sintamos bem acolhidos e bem servidos. Sem dúvidas é um dos melhores lugares que eu já fui. Quero voltar mais vezes!!  
+                        </span>
+                    </p>
+                    <br>
+                    <p>
+                        Não tenho nada do que reclamar, só tenho a agradecer à equipe maravilhosa que dá tudo de si para fazer com que nos sintamos bem acolhidos e bem servidos. Sem dúvidas é um dos melhores lugares que eu já fui. Quero voltar mais vezes!!  
                         </p>
                        </div> 
                     </div>
@@ -285,7 +372,23 @@
             </div>
         </section>
 
-    </main id="content">
+        <section id="address">
+            <h2 class="section-title"> Nosso endereço</h2>
+            <br>
+            <div style="width: 100%; max-width: 800px; margin: auto;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9475.385301158278!2d-60.0123988617186!3d-3.1188324097185927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0541aa5655b3%3A0xd2060e4b82b0a5d5!2sPh.D%20da%20Culin%C3%A1ria!5e0!3m2!1spt-BR!2sbr!4v1757293602265!5m2!1spt-BR!2sbr"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+        </section>
+
+    </main>
 
     <footer>
         <img src="src/images/wave.svg" alt="">
