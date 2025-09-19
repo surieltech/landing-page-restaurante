@@ -84,7 +84,7 @@
     margin-bottom: 20px;
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limita a 3 linhas com reticências */
+    /* -webkit-line-clamp: 3; /* Limita a 3 linhas com reticências */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -93,7 +93,7 @@
 .read-more {
     display: inline-block;
     padding: 8px 20px;
-    background: linear-gradient(90deg, #ffcb45 0%, #ff8e53 100%);
+    background: linear-gradient(90deg, #ffcb45 0%);
     color: white;
     border-radius: 30px;
     text-decoration: none;
