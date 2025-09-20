@@ -69,9 +69,10 @@
         font-size: 2.5rem;
     }
  
-    /* se quiser tirar a imagem da chef: #avaliacoes_chef {
+    /* tira a imagem da chef no mobile*/
+    #avaliacoes_chef {
         display: none;
-    } */
+    } 
 
     #avaliacoes_content {
         width: 70%;
