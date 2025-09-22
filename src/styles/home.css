@@ -51,7 +51,7 @@
     box-shadow: none;
 }
 
-#banner{
+/* #banner{
     display: flex;
     align-items: start;
     justify-content: end;
@@ -62,6 +62,23 @@
 #banner img{
     height: 100%;
     width: fit-content;
+} */
+
+#banner {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    width: 70%;
+    z-index: 2;
+    position: relative;
+}
+
+#banner img {
+    max-width: 100%;   /* não ultrapassa a largura */
+    max-height: 90vh;  /* ocupa quase toda a altura da tela */
+    width: auto;       /* mantém proporção */
+    height: auto;      /* mantém proporção */
+    object-fit: contain; /* garante que a imagem se encaixa sem cortar */
 }
 
 .shape {

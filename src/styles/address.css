@@ -1,0 +1,77 @@
+/* Estilos para a seção de endereço */
+#address .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #e9a202;
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+/* barrinha pra parte de baixo da aba de endereço */
+#address .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #e67e22, #f39c12);
+    border-radius: 2px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .address-container {
+        flex-direction: column;
+    }
+    
+    .map-container, .info-container {
+        width: 100%;
+    }
+    
+    .info-container {
+        padding: 25px;
+    }
+    
+    #address .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .decoration-element i {
+        font-size: 1.8rem;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #address {
+        padding: 60px 15px;
+    }
+    
+    .info-container {
+        padding: 20px;
+    }
+    
+    #address .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .info-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
